@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CRUD_DataManagement.Agenda_Create">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/font_rockford_sans"
+            android:gravity="center"
+            android:text="INPUT AGENDA KEGIATAN"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/icon_wonnda" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            app:cornerRadius="15dp"
+            app:endIconMode="clear_text"
+            app:boxStrokeColor="@color/purple_200"
+            android:background="@color/white"
+            app:helperTextTextColor="@color/red"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_nama_pj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/font_rockford_sans"
+                android:hint="Nama Penanggung Jawab"
+                android:inputType="textPersonName"
+                android:maxLength="35"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            app:endIconMode="clear_text"
+            app:boxStrokeColor="@color/purple_200"
+            android:background="@color/white"
+            app:helperTextTextColor="@color/red"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_tempat_acara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/font_rockford_sans"
+                android:hint="Tempat Pelaksanaan"
+                android:inputType="text"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            app:endIconMode="clear_text"
+            app:boxStrokeColor="@color/purple_200"
+            android:background="@color/white"
+            app:helperTextTextColor="@color/red"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_nama_kegiatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_book_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/font_rockford_sans"
+                android:hint="Nama Kegiatan"
+                android:inputType="text"
+                android:maxLength="50"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/et_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:digits="0987654321-/"
+            android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/font_rockford_sans"
+            android:hint="Tanggal"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/inputbackground1"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_waktu_mulai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:digits="0987654321:."
+            android:drawableStart="@drawable/ic_baseline_timer_24"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/font_rockford_sans"
+            android:hint="Waktu Mulai"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/inputbackground1"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_waktu_berakhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:digits="0987654321:."
+            android:drawableStart="@drawable/ic_baseline_timer_off_24"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/font_rockford_sans"
+            android:hint="Waktu Berakhir"
+            android:inputType="time"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/inputbackground1"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="30dp"
+            android:outlineSpotShadowColor="@color/black"
+            android:outlineAmbientShadowColor="@color/black"
+            android:backgroundTint="@color/inputbackground"
+            app:cornerRadius="15dp"
+            android:fontFamily="@font/font_rockford_sans"
+            android:text="SUBMIT"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</ScrollView>

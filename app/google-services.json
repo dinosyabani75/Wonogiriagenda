@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "446318643608",
+    "firebase_url": "https://magang-akprind-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "magang-akprind",
+    "storage_bucket": "magang-akprind.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446318643608:android:8168563659b35e2ff483ed",
+        "android_client_info": {
+          "package_name": "com.example.wondaapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446318643608-m6v7g8mg72hsi7ujhjn4j4199t0kuik1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDttpkeXQVEvKAQN7f4uB76n-OVUFBELFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446318643608-m6v7g8mg72hsi7ujhjn4j4199t0kuik1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446318643608:android:474e8b2f0ab3df62f483ed",
+        "android_client_info": {
+          "package_name": "com.example.wonogiriagenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446318643608-m6v7g8mg72hsi7ujhjn4j4199t0kuik1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDttpkeXQVEvKAQN7f4uB76n-OVUFBELFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446318643608-m6v7g8mg72hsi7ujhjn4j4199t0kuik1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

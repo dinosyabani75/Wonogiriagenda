@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wonogiriagenda">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_wonnda_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_wonnda_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Wonogiriagenda">
+
+        <service android:name=".notifications.FirebaseCloudMessaging"
+            android:permission="TODO">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_baseline_notifications_active_24" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/teal_700" />
+
+        <activity
+            android:name=".notifications.AgendaNotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CRUD_DataManagement.Profile_Update_Superadmin"
+            android:exported="true" />
+        <activity
+            android:name=".CRUD_DataManagement.Profile_Update_Admin"
+            android:exported="true" />
+        <activity
+            android:name=".superadmin.SuperAdmin_ListAdmin"
+            android:exported="true" />
+        <activity
+            android:name=".CRUD_DataManagement.Agenda_See"
+            android:exported="true" />
+        <activity
+            android:name=".CRUD_DataManagement.Agenda_Read"
+            android:exported="true" />
+        <activity
+            android:name=".CRUD_DataManagement.Agenda_Create"
+            android:exported="true" />
+        <activity
+            android:name=".superadmin.SuperAdmin_Agenda"
+            android:exported="true" />
+        <activity
+            android:name=".superadmin.SuperAdmin_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".admin.Admin_Agenda"
+            android:exported="true" />
+        <activity
+            android:name=".admin.Admin_Profile"
+            android:exported="true" />
+        <activity
+            android:name=".loginregister.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".admin.AdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".superadmin.SuperAdminActivity"
+            android:exported="true" />
+        <activity
+            android:name=".loginregister.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".splash.Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

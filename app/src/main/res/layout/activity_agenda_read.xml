@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".CRUD_DataManagement.Agenda_Read">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/font_rockford_sans"
+        android:gravity="left"
+        android:text="AGENDA KEGIATAN"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/black" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ImageButton1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/sort"
+            android:foregroundGravity="left"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="290dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:background="@color/inputbackground"
+            android:fontFamily="@font/font_rockford_sans"
+            android:hint="Cari Penanggung Jawab ..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/ImageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/search_button"
+            android:foregroundGravity="right"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="SORT DATA"
+        android:fontFamily="@font/font_rockford_sans"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_acara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Acara"
+                android:fontFamily="@font/font_rockford_sans"
+                android:textSize="12sp"
+                android:textColor="@color/inputbackground4"
+                tools:ignore="HardcodedText"
+                style="?attr/materialButtonOutlinedStyle"/>
+
+            <Button
+                android:id="@+id/bt_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Tanggal"
+                android:fontFamily="@font/font_rockford_sans"
+                android:textSize="12sp"
+                android:textColor="@color/inputbackground4"
+                tools:ignore="HardcodedText"
+                style="?attr/materialButtonOutlinedStyle"/>
+
+            <Button
+                android:id="@+id/bt_tempat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Tempat"
+                android:fontFamily="@font/font_rockford_sans"
+                android:textSize="12sp"
+                android:textColor="@color/inputbackground4"
+                tools:ignore="HardcodedText"
+                style="?attr/materialButtonOutlinedStyle" />
+
+            <Button
+                android:id="@+id/bt_waktu_mulai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Waktu Mulai"
+                android:fontFamily="@font/font_rockford_sans"
+                android:textSize="12sp"
+                android:textColor="@color/inputbackground4"
+                tools:ignore="HardcodedText"
+                style="?attr/materialButtonOutlinedStyle" />
+
+            <Button
+                android:id="@+id/bt_waktu_berakhir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Waktu Berakhir"
+                android:fontFamily="@font/font_rockford_sans"
+                android:textSize="12sp"
+                android:textColor="@color/inputbackground4"
+                tools:ignore="HardcodedText"
+                style="?attr/materialButtonOutlinedStyle" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
